@@ -66,7 +66,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',  # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
         # 'NAME': '../datas/mydata.db',
-        'NAME': 'E:/Dropbox/GitHub/MyDjangoSite/blog/datas/mydata.db',
+        'NAME': 'F:/Dropbox/GitHub/MyDjangoSite/blog/datas/mydata.db',
         'USER': '',                       # Not used with sqlite3.
         'PASSWORD': '',                   # Not used with sqlite3.
         'HOST': '',                       # Set to empty string for localhost. Not used with sqlite3.
@@ -93,3 +93,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
 STATIC_URL = '/static/'
+SITE_ID = 1
