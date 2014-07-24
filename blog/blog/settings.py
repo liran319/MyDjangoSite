@@ -76,6 +76,12 @@ DATABASES = {
 }
 
 
+TEMPLATE_DIRS = (
+    BASE_DIR.replace('\\', '/') + '/blog/templates',
+    BASE_DIR.replace('\\', '/') + '/blog/templates/sblog',
+)
+
+
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
 
@@ -97,3 +103,4 @@ STATIC_URL = '/static/'
 SITE_ID = 1
 
 # print DATABASES['default']['NAME']
+print TEMPLATE_DIRS
