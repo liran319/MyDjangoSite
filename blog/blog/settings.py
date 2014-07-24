@@ -77,8 +77,8 @@ DATABASES = {
 
 
 TEMPLATE_DIRS = (
-    BASE_DIR.replace('\\', '/') + '/blog/templates',
-    BASE_DIR.replace('\\', '/') + '/blog/templates/sblog',
+    BASE_DIR.replace('\\', '/') + '/templates',
+    BASE_DIR.replace('\\', '/') + '/templates/sblog',
 )
 
 
