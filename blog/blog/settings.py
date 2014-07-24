@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+# print BASE_DIR
 
 
 # Quick-start development settings - unsuitable for production
@@ -66,7 +67,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',  # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
         # 'NAME': '../datas/mydata.db',
-        'NAME': 'F:/Dropbox/GitHub/MyDjangoSite/blog/datas/mydata.db',
+        'NAME': BASE_DIR.replace('\\', '/') + '/datas/mydata.db',
         'USER': '',                       # Not used with sqlite3.
         'PASSWORD': '',                   # Not used with sqlite3.
         'HOST': '',                       # Set to empty string for localhost. Not used with sqlite3.
@@ -94,3 +95,5 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 SITE_ID = 1
+
+# print DATABASES['default']['NAME']
