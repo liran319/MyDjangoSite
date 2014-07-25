@@ -103,4 +103,4 @@ STATIC_URL = '/static/'
 SITE_ID = 1
 
 # print DATABASES['default']['NAME']
-print TEMPLATE_DIRS
+# print TEMPLATE_DIRS
