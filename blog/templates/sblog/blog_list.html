@@ -2,10 +2,12 @@
 {% block title %} blog list {% endblock %}
 
 {% block content %}
-<div class="content">
+<div class="content" id="cnt_div">
     {% for blog in blogs %}
         <!-- <h3>{{ blog.caption }}</h3> -->
         <h3><a href="{% url 'detailblog' blog.id %}" style='color:red;text-decoration: none;'>{{ blog.caption }}</a></h3>
+        <!-- <img src="/static/images/cat.jpg" /> -->
+        <img src="{% static "images/cat.jpg" %}"/>
         <div>{{ blog.content }}</div>
     {% endfor %}
 </div>
