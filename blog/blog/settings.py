@@ -42,6 +42,8 @@ INSTALLED_APPS = (
     # Uncomment the next line to enable admin documentation:
     'django.contrib.admindocs',
     'sblog',
+    'django.contrib.markup',
+    'django.contrib.comments',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -111,4 +113,4 @@ SITE_ID = 1
 # print STATIC_ROOT
 # print DATABASES['default']['NAME']
 # print TEMPLATE_DIRS
-print STATICFILES_DIRS
+# print STATICFILES_DIRS
